@@ -40,7 +40,6 @@
     // 对于标签, 以两种方式区分
     for (const node of document.querySelectorAll('li')) {
         const firstChild = node.childNodes[0];
-        console.log(node.childNodes)
         // 对于只有一个元素的列表元素, 则为行内双语
         if (node.childNodes.length == 1) {
             if (firstChild.nodeType === Node.TEXT_NODE) {
