@@ -9,7 +9,6 @@
 // @match        *://*/*/docs/*
 // @match        *://*/docs/*
 // @match        *://*/*-doc/*
-// @match        *://*/wiki/*
 // @match        *://stackoverflow.com/*
 // @match        *://news.ycombinator.com/*
 // @icon         https://www.google.com/s2/favicons?domain=appinn.net

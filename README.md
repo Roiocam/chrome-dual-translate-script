@@ -37,7 +37,6 @@
 - `***/***/docs/` 如 Flink 文档
 - `***/docs/` 如 Lightbend 文档
 - `***/*-doc/` 如 Tomcat 文档
-- `*/wiki` 如 Netty 文档
 - `*/guide` 如 ElasticSearch
 - Stack Overflow
 - Hacker News
