@@ -8,6 +8,8 @@
 // @match        *://*/documentation/*
 // @match        *://*/*/docs/*
 // @match        *://*/docs/*
+// @match        *://*/blog/*
+// @match        *://tutorials.jenkov.com/*
 // @match        *://*/*-doc/*
 // @match        *://stackoverflow.com/*
 // @match        *://news.ycombinator.com/*
@@ -23,12 +25,22 @@
     addGlobalStyle(".dual-css{border:0;width:3.33rem;height:3.33rem;border-radius:50%;box-shadow:0 10px 30px #aaa;background-color:green;display:block;position:fixed;bottom:1.33rem;right:1.33rem}.dual-css:active{background-color:red}")
     btn.className = "dual-css";
     btn.onclick = function () {
-        if ( document.getElementById("U2U1AdzQf13") != null ) {return;}
+        if ( document.getElementById("U2U1AdzQf13") != null ) {
+            while (document.getElementsByClassName("dual-1jk139").length != 0){
+                var arr = document.getElementsByClassName("dual-1jk139")
+                for (const child of arr) {
+                    child.remove();
+                }
+            }
+            document.getElementById("U2U1AdzQf13").remove();
+            return;
+        }
         // 开发者文档正文支持双语
         for (const node of document.querySelectorAll('p')) {
             const copy = document.createElement(node.nodeName);
             copy.textContent = node.textContent;
             copy.style.opacity = 0.74;
+            copy.classList.add("dual-1jk139");
             node.parentElement.insertBefore(copy, node.nextElementSibling);
             node.setAttribute('translate', 'no');
         }
@@ -41,6 +53,7 @@
                 copy.textContent = ' ' + node.textContent;
                 copy.setAttribute('translate', 'yes');
                 copy.style.opacity = 0.74;
+                copy.classList.add("dual-1jk139");
                 node.append(copy);
                 node.setAttribute('translate', 'no');
             } else {
@@ -53,10 +66,11 @@
             const firstChild = node.childNodes[0];
             // 对于只有一个元素的列表元素, 则为行内双语
             if (node.childNodes.length == 1 || node.textContent.length < 75) {
-                // 处理多元素中文字较少的类型. 
+                // 处理多元素中文字较少的类型.
                 if (node.childNodes.length > 1) {
                     const spiltNode = document.createElement('FONT');
                     spiltNode.textContent = ' ';
+                    spiltNode.classList.add("dual-1jk139");
                     node.append(spiltNode);
                     node.setAttribute('translate', 'no');
                     var appendNodes = [];
@@ -70,6 +84,7 @@
                         }
                         dupNode.setAttribute('translate', 'yes');
                         dupNode.style.opacity = 0.74;
+                        dupNode.classList.add("dual-1jk139");
                         appendNodes.push(dupNode);
                     }
                     for (const item of appendNodes) {
@@ -82,6 +97,8 @@
                         copy.textContent = ' ' + content;
                         copy.setAttribute('translate', 'yes');
                         copy.style.opacity = 0.74;
+                        copy.classList.add("dual-1jk139");
+                        copy.appe
                         node.append(copy);
                         node.setAttribute('translate', 'no');
 
@@ -101,6 +118,7 @@
                     const copy = document.createElement(node.nodeName);
                     copy.textContent = node.textContent;
                     copy.style.opacity = 0.74;
+                    copy.classList.add("dual-1jk139");
                     node.parentElement.insertBefore(copy, node.nextElementSibling);
                     node.setAttribute('translate', 'no');
                 }
@@ -111,9 +129,9 @@
         for (const node of document.querySelectorAll('pre')) {
             node.setAttribute('translate', 'no');
         }
-        var flag = document.createElement("DIV");
-        flag.id = "U2U1AdzQf13";
-        document.body.append(flag);
+        var flagDiv = document.createElement("DIV");
+        flagDiv.id = "U2U1AdzQf13";
+        document.body.append(flagDiv);
     }
     document.body.append(btn);
     function addGlobalStyle(css) {
