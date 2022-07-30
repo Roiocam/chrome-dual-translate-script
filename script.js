@@ -11,8 +11,21 @@
 // @match        *://*/blog/*
 // @match        *://tutorials.jenkov.com/*
 // @match        *://*/*-doc/*
+// @match        *://netflixtechblog.com/*
 // @match        *://stackoverflow.com/*
 // @match        *://news.ycombinator.com/*
+// @match        *://cr.openjdk.java.net/*
+// @match        *://dzone.com/*
+// @match        *://github.com/*
+// @match        *://livebook.manning.com/*
+// @match        *://en.algorithmica.org/*
+// @match        *://*.googleblog.com/*
+// @match        *://flink.apache.org/*
+// @match        *://bytebuddy.net/*
+// @match        *://www.1024cores.net/home/*
+// @match        *://mechanical-sympathy.blogspot.com/*
+// @match        *://mechanical-sympathy.blogspot.com/*
+// @match        *://latencytipoftheday.blogspot.com/*
 // @icon         https://www.google.com/s2/favicons?domain=appinn.net
 // @grant        none
 // ==/UserScript==
