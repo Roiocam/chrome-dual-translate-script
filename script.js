@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         技术文档双语翻译
-// @namespace    http://tampermonkey.net/
-// @version      0.1
+// @namespace    https://github.com/Roiocam/chrome-dual-translate-script
+// @version      0.2
 // @description  让谷歌浏览器原生翻译支持双语显示.只会匹配 docs 的结果
 // @author       AndyChen
 // @include      /^(http(s)?:\/\/)(doc(s)?).*$/
