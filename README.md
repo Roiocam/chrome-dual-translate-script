@@ -1,3 +1,5 @@
+> 此项目不再维护, https://github.com/immersive-translate/immersive-translate 更具有可用性.
+
 # 谷歌网页翻译双语支持油猴脚本
 
 让 Chrome 原生的网页翻译支持双语功能。
